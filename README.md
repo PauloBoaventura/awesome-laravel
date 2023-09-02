@@ -1,3 +1,5 @@
+> The original awesome-laravel repo seems to have been abandoned and with no new maintainer. So, this is a fork to continue it. The pending pull requests on the original awesome-laravel repo which follow the [rules](https://github.com/chiraggude/awesome-laravel#contributing) given, have all been merged. It is, as of writing, 24 commits ahead of the original, and would continue to be updated regularly. Feel free to contribute!
+
 # Awesome Laravel [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Build Status](https://img.shields.io/travis/chiraggude/awesome-laravel/master.svg?style=flat)](https://travis-ci.org/chiraggude/awesome-laravel)
 
 > A curated list of awesome bookmarks, packages, tutorials, videos and other cool resources from the Laravel ecosystem.
@@ -9,6 +11,7 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 - [Essentials](#essentials)
 - [Packages](#packages)
 - [Popular Packages](#popular-packages)
+- [Automation](#automation)
 - [Development Setup](#development-setup)
 - [Application Hosting](#application-hosting)
 - [Application Deployment](#application-deployment)
@@ -39,7 +42,7 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [Packagist](https://packagist.org/)
 * [Laravel Collective](https://laravelcollective.com/)
 * [Packalyst](http://packalyst.com/)
-* [Spatie](https://spatie.be/en/opensource/laravel)
+* [Spatie](https://spatie.be/open-source)
 
 ## Popular Packages
 
@@ -129,6 +132,7 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [Purifier](https://github.com/mewebstudio/purifier) - HTML filter
 * [Revisionable](https://github.com/VentureCraft/revisionable) - Create a revision history for Eloquent models
 * [SEOTools](https://github.com/artesaos/seotools) - Helpers for some common SEO techniques
+* [Short URL](https://github.com/ash-jc-allen/short-url) - A Laravel package that can be used for adding shortened URLs to your existing web app.
 * [Page Cache](https://github.com/JosephSilber/page-cache) - Caches responses as static files on disk for lightning fast page loads
 * [Laravel Setting](https://github.com/anlutro/laravel-settings) - Persistent configuration settings that are stored in JSON files
 * [Friendship](https://github.com/hootlex/laravel-friendships) - Friendship management system
@@ -170,7 +174,11 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [Laravel Pjax](https://github.com/spatie/laravel-pjax) - A Pjax middleware
 * [Laravel Blade Javascript](https://github.com/spatie/laravel-blade-javascript) - A Blade directive to export variables to JavaScript
 * [Ziggy](https://github.com/tightenco/ziggy) - Use your Laravel named routes in JavaScript
-* [LiveWire](https://github.com/livewire/livewire) - A magical front-end framework for Laravel
+
+##### UI & UI kits
+* [Livewire](https://livewire.laravel.com/) - A magical front-end framework for Laravel for Powerful, dynamic, front-end UIs without leaving PHP.
+* [Blade UI Kit](https://blade-ui-kit.com/) - A set of renderless components to utilise in your Laravel Blade views. Built for the TALL stack. Completely open-source.
+* [WireUI](https://livewire-wireui.com/docs/get-started) - A simple, fast and elegant way to add blade components made with alpine.js and tailwind, ready to use, enjoy the ease. Livewire components and Tall Stack components
 
 ##### Databases, ORMs, Migrations & Seeding
 
@@ -260,6 +268,12 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [Laravel Newsletter](https://github.com/spatie/laravel-newsletter) - Send newsletters with Mailchimp
 * [Laravel Pusher](https://github.com/vinkla/laravel-pusher) - Pusher API bridge
 
+## Automation
+
+##### Github Actions
+
+* [Security Scanner for Laravel](https://github.com/ephort/security-scanner-actions) - Security Scanner for Laravel 
+
 ## Development Setup
 
 * [Homestead](https://laravel.com/docs/master/homestead) - Official Vagrant box for Laravel
@@ -282,7 +296,6 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) ([Tutorial](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-laravel-tutorial.html))
 * [Cloudways](https://www.cloudways.com/en/laravel-hosting.php)
 * [Ploi](https://ploi.io/)
-* [CodePier](https://codepier.io?ref=awesome-laravel)
 * [RunCloud](https://runcloud.io/)
 
 ## Application Deployment
@@ -290,6 +303,7 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [Deployer](https://deployer.org/) - A deployment tool with support for Laravel out of the box
 * [Envoyer](https://envoyer.io/) - Zero down-time Deployer for PHP & Laravel projects
 * [Rocketeer](https://github.com/rocketeers/rocketeer) - Task runner and deployment package
+* [Cleaver](https://cleaver.cloud/laravel) - Unlimited, zero downtime deployments and rollbacks
 
 ## Code Snippets
 
@@ -316,6 +330,7 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [Laravel Best Practices](https://github.com/alexeymezenin/laravel-best-practices)
 * [Pusher Laravel Tutorials](https://pusher.com/tutorials?tag=Laravel)
 * [LaraShout](https://larashout.com/)
+* [Modern PHP cheatsheet](https://github.com/smknstd/modern-php-cheatsheet) - Cheatsheet for some Php knowledge you will frequently encounter in modern projects.
 
 ## Videos
 
@@ -335,6 +350,7 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [Pluralsight](https://www.pluralsight.com/search?q=laravel&categories=course)
 * [Bitfumes](https://www.youtube.com/bitfumes)
 * [ConfidentLaravel](https://confidentlaravel.com/)
+* [EspecializaTi](https://academy.especializati.com.br/) ([YouTube](https://www.youtube.com/c/EspecializatiBr/videos) (PT-BR)
 
 ## Conferences
 
@@ -409,6 +425,7 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 ## Starter Projects
 
 * [Spark](https://spark.laravel.com/)
+* [Wave] (https://github.com/thedevdojo/wave) - Wave is a Software as a Service Starter Kit that can help you build your next great idea 💰. Wave is built with Laravel, Voyager, TailwindCSS, and a few other awesome technologies. Here are some of the awesome features ✨:
 * [LaraAdmin](https://github.com/dwijitsolutions/laraadmin)
 * [Grafite Builder](https://github.com/GrafiteInc/Builder)
 * [Laravel Boilerplate](https://github.com/rappasoft/laravel-5-boilerplate)
@@ -460,7 +477,6 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [PyroCMS](https://github.com/pyrocms/pyrocms)
 * [Lavalite](https://github.com/LavaLite/cms)
 * [TypiCMS](https://github.com/typicms/base)
-* [Asgard CMS](https://github.com/AsgardCms/Platform)
 * [Microweber](https://github.com/microweber/microweber)
 * [Coaster CMS](https://github.com/web-feet/coastercms)
 * [Statamic](https://statamic.com/)
@@ -468,6 +484,7 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [PJ Blog](https://github.com/jcc/blog/)
 * [Laralum](https://github.com/Laralum/Laralum)
 * [Twill](https://github.com/area17/twill)
+* [Azuriom](https://github.com/Azuriom/Azuriom)
 
 ## Podcasts
 
@@ -484,12 +501,13 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [Gitter](https://gitter.im/laravel/laravel)
 * [IRC Channel](http://laravel.io/chat)
 * [StackOverflow](http://stackoverflow.com/questions/tagged/laravel)
+* [Telegram](https://t.me/Laravel)
 * [Twitter](https://twitter.com/laravelphp)
-* [Google+](https://plus.google.com/communities/106838454910116161868)
 * [Reddit](https://www.reddit.com/r/laravel)
 * [Quora](https://www.quora.com/topic/Laravel)
 * [Facebook](https://www.facebook.com/LaravelCommunity)
 * [LinkedIn](https://www.linkedin.com/groups/4419933/profile)
+- [Discord](https://discord.gg/tAGgz7B)
 
 ##### Local User Groups
 
@@ -498,10 +516,11 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 * [Laravel India](https://laravellive.in/), [Slack Signup](https://laravelliveindia.slack.com/join/shared_invite/enQtNjQyMDE4NDA3MDQzLWMyZmIxNGZkNGVkNGFmMzE1MTgyOGNiZGY1ZmU1ZDQ3Mzk2ODBlZGJlODk3ZmI0OWNlZmI5MzQyZDJhYzg1NjE), [Twitter](https://twitter.com/LaravelLiveIN), [Facebook](https://www.facebook.com/laravellive/), [Youtube](https://www.youtube.com/channel/UC6TxYSHI7g9FMJ7VlHk72Yg)
 * [Laravel UK](https://laravelphp.uk/), [Slack Signup](https://laravelphp.uk/login/slack)
 * [Laravel Russia](https://laravel.ru/) ([VK group](http://m.vk.com/laravel_rus))
+* [Laravel Thailand](https://www.facebook.com/groups/371993079543385/)
 * [Laravel France](https://laravel.fr/)
 * [Laravel Bangladesh](https://www.facebook.com/groups/LaravelBanglaDesh/)
 * [Laravel Indonesia](http://id-laravel.com/) ([Facebook](https://www.facebook.com/groups/laravel/), [Telegram](https://t.me/laravelindonesia))
-* [Laravel Brasil](http://www.laravel.com.br/) ([Facebook](https://www.facebook.com/groups/laravelbrasil/), [Slack](http://slack.laravel.com.br), [Telegram](https://telegram.me/laravelbr), [GitHub](https://github.com/laravelbrasil), [Discord](https://discord.gg/9dpuWeZ))
+* Laravel Brasil ([Facebook](https://www.facebook.com/groups/laravelbrasil/), [Telegram](https://telegram.me/laravelbr), [GitHub](https://github.com/laravelbrasil), [Discord](https://discord.gg/9dpuWeZ))
 * [Laravel Turkey](http://www.laravel.gen.tr/) ([Facebook](https://www.facebook.com/groups/laravelturkiye/))
 * [Laravel Nigeria](http://www.laravelnigeria.com/) ([Facebook](https://www.facebook.com/groups/laravelnigeria/))
 * [Laravel China](https://phphub.org/)
@@ -525,7 +544,6 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 
 * [All Meetups](http://www.meetup.com/topics/laravel/)
 * [London Meetup](https://www.meetup.com/London-Laravel/)
-* [Buenos Aires Meetup](https://www.meetup.com/Laravel-Buenos-Aires/)
 * [Athens-Greece Meetup](https://www.meetup.com/athens-laravel-meetup/)
 * [Copenhagen Meetup](https://www.meetup.com/Copenhagen-Laravel-Meetup/)
 * [Detroit Meetup](https://www.meetup.com/Laravel-Detroit/)
@@ -546,6 +564,7 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 
 ## Miscellaneous
 
+* [Best of Laravel](https://bestoflaravel.com) - One place to learn all things Laravel
 * [CodeCanyon](https://codecanyon.net/tags/laravel?term=laravel) - Paid scripts and plugins
 * [Laravel Collections](https://laravelcollections.com) - Every Laravel Developers Goto Resource Site
 * [LaravelLinks](https://telegram.me/laravellinks) - A Telegram Channel dedicated to sharing great Laravel Resources
@@ -559,7 +578,7 @@ Found an awesome package, blog, course or video? Send me a pull request!
 * Please make an individual pull request for each suggestion
 * Make sure the Travis tests pass on your pull request
 * Use the following format for links: \[Resource\]\(URL\)
-* Want to suggest a package? Read the [Contribution Guide](https://github.com/chiraggude/awesome-laravel/blob/master/CONTRIBUTING.md)
+* Want to suggest a package? Read the [Contribution Guide](https://github.com/titonova/awesome-laravel/blob/master/CONTRIBUTING.md)
 * New categories or improvements to the existing categorization are welcome
 
 ## License
