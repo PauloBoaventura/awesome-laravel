@@ -1,6 +1,11 @@
 Awesome Laravel
 ===============
 
+Ultima Atualização: 8 de Outubro 2021
+
+===========================================
+
+
 A curated list of delightful [Laravel](http://laravel.com/) PHP framework [packages](#packages) and [resources](#resources).  Inspired by other [awesome lists](https://github.com/bayandin/awesome-awesomeness).
 
 ## Packages
