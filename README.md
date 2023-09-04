@@ -1,43 +1,349 @@
-> O repositório original do Awesome-Laravel parece ter sido abandonado e sem um novo mantenedor.Então, este é um garfo para continuar.As solicitações de tração pendentes no repo de Laravel Awesome-Laravel original que seguem o[rules](https://github.com/chiraggude/awesome-laravel#contributing) Dado, todos foram mesclados.É, a partir da redação, 24 se comprometeu à frente do original e continuaria sendo atualizada regularmente.Sinta -se à vontade para contribuir!
+> Muitas modificações foram feitas desde sua origem, sendo a grande parte dos dados inseridas em 2021/22, mas não foram atualizadas desde então..
+Em 2023 foi criado este garfo a partir do repositório original do Awesome-Laravel. Então, este é um garfo para continuar.As solicitações de tração pendentes no repo de Laravel Awesome-Laravel original que seguem os [rules](https://github.com/chiraggude/awesome-laravel#contributing) Dados, todos foram mesclados. E, a partir da redação, 24 se comprometeu à frente do original e continuaria sendo atualizada regularmente.Sinta -se à vontade para contribuir!
 
-# Awesome Laravel [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Build Status](https://img.shields.io/travis/chiraggude/awesome-laravel/master.svg?style=flat)](https://travis-ci.org/chiraggude/awesome-laravel)
+
+## Awesome Laravel [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Build Status](https://img.shields.io/travis/chiraggude/awesome-laravel/master.svg?style=flat)](https://travis-ci.org/chiraggude/awesome-laravel)
 
 
-**Update Nov 2022**: the bigger and updated list of packages is now on our website: [laraveldaily.com/packages](https://laraveldaily.com/packages)
+**Update 2023**: the bigger and updated list of packages is now on our website: [laraveldaily.com/packages](https://laraveldaily.com/packages)
 
+**Foi inserida uma lista de outro repositorio e speparado a Lista de Tutoriais para [LIST2.md](LIST2.md)**
 >Uma lista com curadoria de favoritos incríveis, pacotes, tutoriais, vídeos e outros recursos legais do ecossistema Laravel.
 
 Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 
-## Table of Contents
+### Table of Contents
 
+- [Debugging, Maintenance \& Optimization (21)](#debugging-maintenance--optimization-21)
+- [Database \& Eloquent (29)](#database--eloquent-29)
+- [Multi-Language (8)](#multi-language-8)
+- [Misc (59)](#misc-59)
+- [E-Commerce (5)](#e-commerce-5)
+- [Flash Alerts Notifications (6)](#flash-alerts-notifications-6)
+- [Mail (3)](#mail-3)
 - [Essentials](#essentials)
-- [Packages](#packages)
-- [Packages2][Packages2]
-- [Admin Tools/Panels] (#Admin-Tools/Panels)
+  - [Packages](#packages)
+- [Packages2](#packages2)
 - [Popular Packages](#popular-packages)
-    - [Developer Tools]
-        - [Developer Tools2]
+- [Developer Tools](#developer-tools)
+- [Development Tools2](#development-tools2)
+- [Development Tools3](#development-tools3)
+- [Algorithms/Data Structures](#algorithmsdata-structures)
+- [Authentication/Security](#authenticationsecurity)
+    - [Boilerplate/Customized Configurations](#boilerplatecustomized-configurations)
+    - [Database/Eloquent/Models](#databaseeloquentmodels)
+    - [Design Pattern Tools](#design-pattern-tools)
+    - [E-commerce](#e-commerce)
+    - [GIS/Mapping](#gismapping)
+    - [Helpers/General](#helpersgeneral)
+    - [JavaScript Framework Support](#javascript-framework-support)
+    - [Third-Party API Support](#third-party-api-support)
+    - [REST/Web Services](#restweb-services)
+    - [Views](#views)
+    - [Web Forms](#web-forms)
+    - [WordPress Integration](#wordpress-integration)
+    - [Admin Tools/Panels](#admin-toolspanels)
+        - [Testing \& Debugging](#testing--debugging)
+        - [Authentication \& Authorization](#authentication--authorization)
+        - [Utilities](#utilities)
+        - [Media \& Document Management](#media--document-management)
+        - [Integration with Javascript](#integration-with-javascript)
+        - [UI \& UI kits](#ui--ui-kits)
+        - [Databases, ORMs, Migrations \& Seeding](#databases-orms-migrations--seeding)
+        - [Search](#search)
+        - [APIs](#apis)
+        - [Tasks, Commands and Scheduling](#tasks-commands-and-scheduling)
+        - [Payments](#payments)
+        - [Optimization](#optimization)
+        - [Monitoring](#monitoring)
+        - [Localization](#localization)
+        - [Third-party Service Integration](#third-party-service-integration)
+  - [Automation](#automation)
+        - [Github Actions](#github-actions)
+  - [Development Setup](#development-setup)
+  - [Application Hosting](#application-hosting)
+  - [Application Deployment](#application-deployment)
+  - [Code Snippets](#code-snippets)
+    - [Applications Built with Laravel](#applications-built-with-laravel)
+  - [Contributing](#contributing)
+      - [Guidelines](#guidelines)
+  - [License](#license)
+----
 
-- [Automation](#automation)
-- [Development Setup](#development-setup)
-- [Application Hosting](#application-hosting)
-- [Application Deployment](#application-deployment)
-- [Code Snippets](#code-snippets)
-- [Tutorials & Blogs](#tutorials--blogs)
-- [Videos](#videos)
-- [Conferences](#conferences)
-- [Books](#books)
-- [Starter Projects](#starter-projects)
-- [Codebases for Reference](#codebases-for-reference)
-- [Content Management Systems](#content-management-systems)
-- [Podcasts](#podcasts)
-- [Community](#community)
-- [Jobs](#jobs)
-- [Hosted Development Tools](#hosted-development-tools)
-- [Miscellaneous](#miscellaneous)
 
-## Essentials
+## Auth and Users  (12)
+Package deve ter mais de 100 estrelas no GitHub e funcionar com a versão mais recente do Laravel.
+
+---
+Package                                                                               | Descrição                                                                                     | Estrelas |
+| ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | -------- |
+| [spatie/laravel-permission](https://github.com/spatie/laravel-permission)             | Associar usuários com permissões e funções                                                    | 11.429   |
+| [spatie/laravel-activitylog](https://github.com/spatie/laravel-activitylog)           | Fornece funções fáceis de usar para registrar as atividades dos usuários de sua aplicação   | 4.898    |
+| [JosephSilber/bouncer](https://github.com/JosephSilber/bouncer)                         | Abordagem elegante e independente de framework para gerenciar funções e habilidades           | 3.291    |
+| [cmgmyr/laravel-messenger](https://github.com/cmgmyr/laravel-messenger)               | Esta package permite adicionar um sistema de mensagens completo à sua aplicação Laravel      | 2.350    |
+| [santigarcor/laratrust](https://laratrust.santigarcor.me/)                             | Package de controle de acesso baseado em funções para Laravel                                   | 2.055    |
+| [404labfr/laravel-impersonate](https://github.com/404labfr/laravel-impersonate)       | Facilita a autenticação como seus usuários. Adicione um simples traço ao seu modelo de usuário | 1.776    |
+| [laravolt/avatar](https://github.com/laravolt/avatar)                                   | Exibe um avatar exclusivo para qualquer usuário com base em seu nome (iniciais)               | 1.762    |
+| [cartalyst/sentinel](https://github.com/cartalyst/sentinel)                             | Sistema de autenticação e autorização independente de framework                                  | 1.470    |
+| [cybercog/laravel-ban](https://github.com/cybercog/laravel-ban)                         | Simplifica o gerenciamento de banimento de modelos Eloquent. Torne qualquer modelo banível em minutos! | 982    |
+| [rappasoft/laravel-authentication-log](https://github.com/rappasoft/laravel-authentication-log) | Laravel Authentication Log é uma package que rastreia informações de autenticação de seus usuários, como hora de login/logout, IP, navegador, localização, etc. Além disso, envia notificações por email, Slack ou SMS para novos dispositivos e tentativas de login malsucedidas. | 640 |
+| [creativeorange/gravatar](https://github.com/creativeorange/gravatar)                   | Uma package Gravatar Laravel para recuperar URLs de imagens Gravatar ou verificar a existência de uma imagem | 518 |
+| [OctopyID/LaraPersonate](https://github.com/OctopyID/LaraPersonate)                     | É uma package de Impersonation para o Framework Laravel. Com esta package, você pode facilmente se passar por outros usuários, seja manualmente ou usando a interface que fornecemos | 220 |
+
+---
+
+## Code Structure & Architecture (6)
+
+| Package                                                                               | Descrição                                                                                     | Estrelas |
+| ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | -------- |
+| [nWidart/laravel-modules](https://github.com/nWidart/laravel-modules)               | Package para gerenciar seu grande aplicativo Laravel usando módulos. Módulo é como uma package Laravel, tem algumas visualizações, controladores ou modelos. | 4.954 |
+| [archtechx/tenancy](https://tenancyforlaravel.com/)                                  | Uma package flexível de multi-inquilinos para o Laravel. Inquilino único e múltiplo banco de dados, modo automático e manual, arquitetura baseada em eventos. | 3.078 |
+| [lorisleiva/laravel-actions](https://laravelactions.com)                              | Classes que cuidam de uma tarefa específica. Esta package introduz uma nova maneira de organizar a lógica de suas aplicações Laravel, concentrando-se nas ações que sua aplicação fornece. | 2.160 |
+| [BenSampo/laravel-enum](https://github.com/BenSampo/laravel-enum)                     | Implementação de enumeração simples, extensível e poderosa para Laravel | 1.898 |
+| [protonemedia/laravel-splade](https://github.com/protonemedia/laravel-splade)         | O Splade oferece uma maneira super fácil de criar Aplicativos de Página Única (SPA) usando modelos Blade Laravel padrão, aprimorados com componentes Vue 3 sem renderização. | 1.221 |
+| [spatie/laravel-multitenancy](https://github.com/spatie/laravel-multitenancy)         | Torne seu aplicativo Laravel utilizável por vários inquilinos | 947 |
+
+
+
+
+
+- - - - -
+
+
+
+
+
+</tbody>
+
+---
+
+## Admin Panels, Code Generators and CMS (15)
+
+| Package                                                                                               | Descrição                                                                                             | Estrelas |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------- |
+| [laravel-filament/filament](https://filamentphp.com/)                                               | Filament é uma coleção de ferramentas para construir rapidamente aplicativos TALL stack bonitos, projetados para humanos. | 8.695    |
+| [yajra/laravel-datatables](https://github.com/yajra/laravel-datatables)                               | API jQuery DataTables para Laravel                                                                      | 4.612    |
+| [orchidsoftware/platform](https://github.com/orchidsoftware/platform)                                   | Orchid é um pacote Laravel gratuito que abstrai a lógica de negócios padrão e permite o desenvolvimento rápido de aplicativos de back-office, painéis de administração e dashboards orientados por código. | 3.876    |
+| [area17/twill](https://github.com/area17/twill)                                                         | Twill é um pacote Laravel de código aberto que ajuda os desenvolvedores a criar rapidamente um CMS personalizado que é bonito, poderoso e flexível. | 3.380    |
+| [statamic/cms](https://github.com/statamic/cms)                                                       | Statamic é um CMS alimentado pelo Laravel + Git, projetado para construir sites bonitos e fáceis de gerenciar. | 2.932    |
+| [Laravel-Backpack/CRUD](https://github.com/Laravel-Backpack/CRUD)                                       | Construa rapidamente um painel de administração para seus modelos Eloquent e personalize todos os detalhes. | 2.735    |
+| [laravel-shift/blueprint](https://github.com/laravel-shift/blueprint)                                 | Ferramenta para gerar rapidamente vários componentes Laravel a partir de uma única definição legível por humanos. | 2.504    |
+| [saleem-hadad/larecipe](https://github.com/saleem-hadad/larecipe)                                   | LaRecipe é simplesmente um pacote baseado em código que oferece uma maneira fácil de criar documentação bonita para seu produto ou aplicativo dentro de seu aplicativo Laravel. | 2.217    |
+| [tailflow/laravel-orion](https://github.com/tailflow/laravel-orion)                                   | Laravel Orion permite que você construa uma API REST totalmente funcional com base em seus modelos Eloquent e relacionamentos com a simplicidade do Laravel que você adora. | 1.295    |
+| [nasirkhan/laravel-starter](https://github.com/nasirkhan/laravel-starter)                             | Projeto inicial simples. A maioria dos recursos comumente necessários de uma aplicação, como Autenticação, Autorização, Gerenciamento de Usuários e Funções, Backend da Aplicação, Backup, Visualizador de Logs estão disponíveis aqui. | 893      |
+| [AndreasElia/laravel-api-to-postman](https://github.com/AndreasElia/laravel-api-to-postman)       | Este pacote permite gerar automaticamente uma coleção Postman com base em suas rotas de API. Ele também fornece configuração básica e suporte para tokens de autenticação do tipo bearer e autenticação básica para rotas protegidas por middleware de autenticação. | 841      |
+| [LaravelDaily/Larastarters](https://github.com/LaravelDaily/Larastarters)                               | Pacote para instalar um Kit de Inicialização Laravel regular com um tema de design diferente. | 697      |
+| [code16/sharp](https://github.com/code16/sharp)                                                         | Estrutura de gerenciamento de conteúdo, um conjunto de ferramentas que ajudam a construir uma seção CMS em um site. | 650      |
+| [fumeapp/laranuxt](https://github.com/fumeapp/laranuxt)                                                 | Boilerplate Laravel + Nuxt.js | 548      |
+| [binarcode/laravel-restify](https://github.com/binarcode/laravel-restify)                             | O primeiro construtor Laravel JSON:API totalmente personalizável. "CRUD" e proteja seus recursos com 0 (zero) linha de código extra. | 485      |
+
+---
+
+## File Management & Manipulation (6)
+
+| Package                                                                                               | Descrição                                                                                             | Estrelas |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------- |
+| [Intervention/image](https://image.intervention.io/v2)                                                 | Não apenas Laravel, mas um pacote PHP geral: biblioteca de manipulação e manipulação de imagens | 13.404   |
+| [spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary)                         | Este pacote pode associar todos os tipos de arquivos com modelos Eloquent | 5.400    |
+| [spatie/browsershot](https://github.com/spatie/browsershot)                                           | Converta uma página da web em uma imagem ou PDF usando o Chrome headless | 4.419    |
+| [spatie/image-optimizer](https://github.com/spatie/image-optimizer)                                   | Otimize PNGs, JPGs, SVGs e GIFs executando-os através de uma cadeia de várias ferramentas de otimização de imagens | 2.479    |
+| [rap2hpoutre/fast-excel](https://github.com/rap2hpoutre/fast-excel)                                   | Importação/exportação rápida de Excel para Laravel, graças ao Spout. | 1.884    |
+| [spatie/pdf-to-image](https://github.com/spatie/pdf-to-image)                                         | Converta um PDF em uma imagem | 1.186    |
+
+---
+
+## Visuals & UI: Blade, Themes, Icons (8)
+
+| Package                                                                                               | Descrição                                                                                             | Estrelas |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------- |
+| [blade-ui-kit/blade-icons](https://github.com/blade-ui-kit/blade-icons)                               | Um pacote para usar facilmente ícones SVG em suas visualizações Blade Laravel | 1.872    |
+| [GrahamCampbell/Laravel-Markdown](https://github.com/GrahamCampbell/Laravel-Markdown)               | Laravel Markdown é um wrapper CommonMark para Laravel | 1.268    |
+| [wireui/wireui](https://github.com/wireui/wireui)                                                     | Biblioteca de componentes e recursos para fortalecer o desenvolvimento de aplicativos Laravel e Livewire. | 1.102    |
+| [wire-elements/modal](https://github.com/wire-elements/modal)                                       | Componente Livewire que fornece um modal que suporta vários modais filhos mantendo o estado. | 932      |
+| [wire-elements/spotlight](https://github.com/wire-elements/spotlight)                                 | Componente Livewire que traz funcionalidade semelhante ao Spotlight/Alfred para sua aplicação Laravel. | 858      |
+| [protonemedia/laravel-form-components](https://github.com/protonemedia/laravel-form-components) | Componentes Blade para construir formulários com Tailwind CSS/Bootstrap | 780      |
+| [spatie/laravel-html](https://github.com/spatie/laravel-html)                                           | Geração de HTML sem dor | 671      |
+| [vildanbina/livewire-wizard](https://github.com/vildanbina/livewire-wizard)                             | Um componente dinâmico do Laravel Livewire para formulários de várias etapas. | 270      |
+
+---
+
+# Debugging, Maintenance & Optimization (21)
+
+| Package                                                                                               | Descrição                                                                                             | Estrelas |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------- |
+| [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)                             | Este é um pacote para integrar o PHP Debug Bar com o Laravel. | 15.481   |
+| [spatie/laravel-backup](https://github.com/spatie/laravel-backup)                                       | Este pacote Laravel cria um backup de sua aplicação. O backup é um arquivo zip que contém todos os arquivos nos diretórios que você especificar, juntamente com um despejo de seu banco de dados. | 5.312    |
+| [itsgoingd/clockwork](https://github.com/itsgoingd/clockwork)                                         | Clockwork oferece informações sobre o tempo de execução de sua aplicação, incluindo dados de solicitação, métricas de desempenho, entradas de log, consultas de banco de dados, consultas de cache, comandos redis, eventos despachados, trabalhos em fila, visualizações renderizadas e muito mais. | 5155     |
+| [nunomaduro/larastan](https://github.com/nunomaduro/larastan)                                       | Adiciona análise de código ao Laravel, melhorando a produtividade e a qualidade do código do desenvolvedor. | 4788     |
+| [laravel/telescope](https://laravel.com/docs/9.x/telescope)                                        | O Telescope fornece informações sobre as solicitações que chegam à sua aplicação, exceções, entradas de log, consultas de banco de dados, trabalhos em fila, emails, notificações, operações de cache, tarefas agendadas, despejos de variáveis e muito mais. | 4566     |
+| [rap2hpoutre/laravel-log-viewer](https://github.com/rap2hpoutre/laravel-log-viewer)                 | Visualizador de logs do Laravel | 3025     |
+| [opcodesio/log-viewer](https://github.com/opcodesio/log-viewer)                                     | O Log Viewer ajuda você a ver rapidamente entradas de log individuais, pesquisar, filtrar e compreender seus logs do Laravel rapidamente. | 2790     |
+| [ARCANEDEV/LogViewer](https://github.com/ARCANEDEV/LogViewer)                                       | Este pacote permite que você gerencie e acompanhe cada um de seus arquivos de log. | 2322     |
+| [beyondcode/laravel-query-detector](https://github.com/beyondcode/laravel-query-detector)           | O detector de consulta Laravel N+1 ajuda você a aumentar o desempenho de sua aplicação, reduzindo o número de consultas executadas. | 1810     |
+| [imanghafoori1/laravel-microscope](https://github.com/imanghafoori1/laravel-microscope)           | Refatoração destemida, ele realiza muitas verificações inteligentes para encontrar determinados erros/panéis de usuário e painéis de controle. | 1323     |
+| [hammerstonedev/fast-paginate](https://github.com/hammerstonedev/fast-paginate)                   | Este é um macro de paginação de limite/deslocamento rápido para o Laravel. Pode ser usado em vez dos métodos de paginação padrão. | 1043     |
+| [spatie/laravel-uptime-monitor](https://github.com/spatie/laravel-uptime-monitor)               | Um monitor de tempo de atividade e SSL poderoso e fácil de configurar | 979      |
+| [spatie/laravel-db-snapshots](https://github.com/spatie/laravel-db-snapshots)               | Faça rapidamente despejos e carregue bancos de dados | 894      |
+| [spatie/laravel-failed-job-monitor](https://github.com/spatie/laravel-failed-job-monitor)       | Receba notificações quando um trabalho em fila falhar | 825      |
+| [spatie/laravel-server-monitor](https://github.com/spatie/laravel-server-monitor)               | Este pacote acompanha a saúde de todos os seus servidores. | 768      |
+| [spatie/laravel-schedule-monitor](https://github.com/spatie/laravel-schedule-monitor)           | Monitore tarefas agendadas em um aplicativo Laravel | 742      |
+| [spatie/laravel-health](https://github.com/spatie/laravel-health)               | Usando este pacote, você pode monitorar a saúde de sua aplicação registrando verificações. | 590      |
+| [hammerstonedev/flaky](https://github.com/hammerstonedev/flaky)               | Lida com operações que podem ter falhas intermitentes devido a terceiros não confiáveis. | 387      |
+| [PlannrCrm/laravel-fast-refresh-database](https://github.com/PlannrCrm/laravel-fast-refresh-database) | Ajuda a acelerar os testes, quando o trait RefreshDatabase leva muito tempo para executar testes quando você tem muitas migrações. | 349      |
+| [qcod/laravel-app-settings](https://github.com/qcod/laravel-app-settings)               | Use qcod/laravel-app-settings para adicionar um gerenciador de configurações com interface de usuário em seu aplicativo Laravel. Ele armazena configurações no banco de dados e, por padrão, usa o Bootstrap 4 para estilização, mas você pode configurá-lo para funcionar com qualquer sistema CSS. | 319      |
+| [MohsenAbrishami/stethoscope](https://github.com/MohsenAbrishami/stethoscope)               | Com este pacote, você pode verificar a saúde de seu servidor a qualquer momento. | 241      |
+->
+
+# Database & Eloquent (29)
+
+| Package | Descrição | Estrelas |
+| ------- | --------- | ------- |
+|  [cviebrock/eloquent-sluggable](https://github.com/cviebrock/eloquent-sluggable) | Facilita a criação de slugs para seus modelos Eloquent no Laravel. | 3720 |
+| [spatie/laravel-query-builder](https://github.com/spatie/laravel-query-builder) | Filtra, ordena e inclui relações Eloquent com base em uma solicitação. | 3717 |
+| [owen-it/laravel-auditing](https://github.com/owen-it/laravel-auditing) | Registra o log de alterações nos modelos do Laravel. | 2713 |
+| [orangehill/iseed](https://github.com/orangehill/iseed) | Gerador inverso de seeds (iSeed) é um pacote Laravel que fornece um método para gerar um novo arquivo de seed com base nos dados da tabela de banco de dados existente. | 2619 |
+| [VentureCraft/revisionable](https://github.com/VentureCraft/revisionable) | Crie facilmente um histórico de revisões para qualquer modelo Laravel. | 2468 |
+| [staudenmeir/eloquent-has-many-deep](https://github.com/staudenmeir/eloquent-has-many-deep) | Esta versão estendida do HasManyThrough permite relacionamentos com modelos intermediários ilimitados. | 2323 |
+| [calebporzio/sushi](https://github.com/calebporzio/sushi) | O driver "array" ausente do Eloquent. Às vezes, você deseja usar o Eloquent, mas sem lidar com um banco de dados. | 2093 |
+| [kitloong/laravel-migrations-generator](https://github.com/kitloong/laravel-migrations-generator) | Gerador de migrações do Laravel: gera automaticamente suas migrações a partir de um esquema de banco de dados existente. | 1950 |
+| [spatie/laravel-collection-macros](https://github.com/spatie/laravel-collection-macros) | Um conjunto de macros úteis para coleções Laravel. | 1600 |
+| [spatie/eloquent-sortable](https://github.com/spatie/eloquent-sortable) | Comportamento de classificação para modelos Eloquent. | 1259 |
+| [spatie/laravel-sluggable](https://github.com/spatie/laravel-sluggable) | Gere slugs ao salvar modelos Eloquent. | 1239 |
+| [spatie/laravel-searchable](https://github.com/spatie/laravel-searchable) | Pesquise de forma pragmática em modelos e outras fontes. | 1232 |
+| [reliese/laravel](https://github.com/reliese/laravel) | O Gerador de Modelos Reliese Laravel tem como objetivo acelerar o processo de desenvolvimento de aplicativos Laravel, fornecendo algumas capacidades convenientes de geração de código. A ferramenta inspeciona a estrutura do seu banco de dados, incluindo nomes de colunas e chaves estrangeiras, para gerar automaticamente Modelos com propriedades com tipos corretamente tipados, juntamente com quaisquer relacionamentos com outros Modelos. | 1213 |
+| [calebporzio/parental](https://github.com/calebporzio/parental) | Adiciona recursos de STI (Herança de Tabela Única) ao Eloquent. | 1194 |
+| [spatie/laravel-model-states](https://github.com/spatie/laravel-model-states) | Suporte de estado para modelos. | 990 |
+| [protonemedia/laravel-cross-eloquent-search](https://github.com/protonemedia/laravel-cross-eloquent-search) | Pacote Laravel para pesquisar em vários modelos Eloquent. Suporta ordenação, paginação, consultas escopadas, carregamento ansioso de relacionamentos e pesquisa em colunas únicas ou múltiplas. | 957 |
+| [topclaudy/compoships](https://github.com/topclaudy/compoships) | Compoships oferece a capacidade de especificar relacionamentos com base em duas (ou mais) colunas no ORM Eloquent do Laravel. A necessidade de corresponder a várias colunas na definição de um relacionamento Eloquent surge frequentemente ao trabalhar com esquemas/bancos de dados de terceiros ou pré-existentes. | 957 |
+| [spatie/laravel-schemaless-attributes](https://github.com/spatie/laravel-schemaless-attributes) | Adicione atributos sem esquema a modelos Eloquent. | 897 |
+| [spatie/laravel-model-status](https://github.com/spatie/laravel-model-status) | Adicione facilmente estados aos seus modelos. | 842 |
+| [cyrildewit/eloquent-viewable](https://github.com/cyrildewit/eloquent-viewable) | Este pacote Laravel permite associar visualizações a modelos Eloquent. | 714 |
+| [Kyslik/column-sortable](https://github.com/Kyslik/column-sortable) | Pacote para lidar com classificação de colunas. | 614 |
+| [maize-tech/laravel-markable](https://github.com/maize-tech/laravel-markable) | Este pacote permite adicionar facilmente a funcionalidade de marcação à sua aplicação, como curtidas, favoritos e muito mais. | 595 |
+| [lepikhinb/laravel-fluent](https://github.com/lepikhinb/laravel-fluent) | O pacote fornece uma maneira expressiva e "fluente" de definir atributos de modelo. Ele cria automaticamente conversões em tempo de execução e adiciona autocompletamento nativo às propriedades dos modelos. | 528 |
+| [WildsideUK/Laravel-Userstamps](https://github.com/WildsideUK/Laravel-Userstamps) | O Laravel Userstamps fornece um traço Eloquent que mantém automaticamente colunas created_by e updated_by em seu modelo, preenchidas pelo usuário atualmente autenticado em sua aplicação. | 440 |
+| [WendellAdriel/laravel-lift](https://github.com/WendellAdriel/laravel-lift) | Permite criar propriedades públicas em Modelos Eloquent que correspondam ao esquema da tabela. Isso torna seus modelos mais fáceis de ler e trabalhar em qualquer IDE. | 392 |
+| [mehdi-fathi/eloquent-filter](https://github.com/mehdi-fathi/eloquent-filter) | O Eloquent Filter adiciona filtros personalizados automaticamente aos seus Modelos Eloquent no Laravel. | 389 |
+| [oddvalue/laravel-drafts](https://github.com/oddvalue/laravel-drafts) | Um sistema simples de rascunhos/revisões para modelos Laravel. | 291 |
+| [boxfrommars/rutorika-sortable](https://github.com/boxfrommars/rutorika-sortable) | Adiciona comportamento de classificação a modelos Eloquent do Laravel. | 278 |
+| [cjmellor/approval](https://github.com/cjmellor/approval) | O Approval é um pacote Laravel que fornece uma maneira simples de aprovar novos dados do modelo antes que sejam persistidos. | 254 | 
+| ------- | --------- | ------- |
+# Multi-Language (8)
+
+| Package | Descrição | Estrelas |
+| ------- | --------- | ------- |
+| [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization) | Adiciona os recursos de localização ausentes ao Laravel: seleção de idioma na URL e nos cabeçalhos, rotas traduzíveis e muitos outros recursos pequenos que são comumente necessários em sites multilíngues. | 3204 |
+| [spatie/laravel-translatable](https://github.com/spatie/laravel-translatable) | Este pacote contém uma trait para tornar os modelos Eloquent traduzíveis. As traduções são armazenadas como JSON. Não é necessário uma tabela extra para mantê-las. | 2031 |
+| [Astrotomic/laravel-translatable](https://github.com/Astrotomic/laravel-translatable) | Se você deseja armazenar as traduções de seus modelos no banco de dados, este pacote é para você. | 1099 |
+| [spatie/laravel-translation-loader](https://github.com/spatie/laravel-translation-loader) | Armazene suas traduções no banco de dados ou em outras fontes. | 605 |
+| [xiCO2k/laravel-vue-i18n](https://github.com/xiCO2k/laravel-vue-i18n) | laravel-vue-i18n é um plugin Vue3 que permite conectar seus arquivos de tradução do Laravel Framework com o Vue. Ele usa a mesma lógica usada na Localização do Laravel. | 495 |
+| [MohmmedAshraf/laravel-translations](https://github.com/MohmmedAshraf/laravel-translations) | Fornece uma interface de usuário simples e amigável para gerenciar traduções em um aplicativo Laravel. | 352 |
+| [LarsWiegers/laravel-translations-checker](https://github.com/LarsWiegers/laravel-translations-checker) | Nunca se preocupe com traduções ausentes novamente! Use o verificador de traduções. | 193 |
+| [translation/laravel](https://github.com/translation/laravel) | Cliente Translation.io para Laravel 5.5+ até 9.x. | 154 |
+| ------- | --------- | ------- |
+
+# Misc (59)
+
+| Package | Descrição | Estrelas |
+| ------- | --------- | ------- |
+| [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) | Este pacote gera arquivos de ajuda que permitem que seu IDE forneça autocompletamento preciso. | 13347 |
+| [SpartnerNL/Laravel-Excel](https://laravel-excel.com) | Exportações e importações Excel turbinadas para Laravel. | 11669 |
+| [barryvdh/laravel-dompdf](https://github.com/barryvdh/laravel-dompdf) | Wrapper Laravel para o conversor HTML para PDF Dompdf. | 6068 |
+| [beyondcode/laravel-websockets](https://github.com/beyondcode/laravel-websockets) | Websockets para Laravel. | 4906 |
+| [laravel/horizon](https://github.com/laravel/horizon) | Horizon fornece um dashboard bonito e configuração baseada em código para filas Redis alimentadas por Laravel. Horizon permite monitorar facilmente métricas-chave do seu sistema de filas, como taxa de transferência de trabalhos, tempo de execução e falhas de trabalhos. | 3670 |
+| [tighten/ziggy](https://github.com/tighten/ziggy) | Use suas rotas Laravel em JavaScript. | 3382 |
+| [spatie/laravel-analytics](https://github.com/spatie/laravel-analytics) | Um pacote Laravel para recuperar visualizações de página e outros dados do Google Analytics. | 2929 |
+| [artesaos/seotools](https://github.com/artesaos/seotools) | SEOTools é um pacote para Laravel 5.8+ e Lumen que fornece ajudantes para algumas técnicas comuns de SEO. | 2879 |
+| [barryvdh/laravel-snappy](https://github.com/barryvdh/laravel-snappy) | Snappy PDF/Image Wrapper para Laravel. | 2444 |
+| [SimpleSoftwareIO/simple-qrcode](https://github.com/SimpleSoftwareIO/simple-qrcode) | Um gerador de códigos QR PHP fácil de usar com suporte oficial para o Laravel. | 2417 |
+| [DarkaOnLine/L5-Swagger](https://github.com/DarkaOnLine/L5-Swagger) | Especificação OpenApi ou Swagger para o seu projeto Laravel feito facilmente. | 2324 |
+| [Propaganistas/Laravel-Phone](https://github.com/Propaganistas/Laravel-Phone) | Adiciona funcionalidade de número de telefone ao Laravel com base na porta PHP da API libphonenumber do Google por giggsey. | 2268 |
+| [mewebstudio/captcha](https://github.com/mewebstudio/captcha) | Um simples provedor de serviços Laravel para incluir o Captcha no Laravel. | 2266 |
+| [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object) | Objetos de transferência de dados (DTOs) com recursos incluídos. | 2211 |
+| [spatie/laravel-responsecache](https://github.com/spatie/laravel-responsecache) | Acelere um aplicativo Laravel armazenando em cache a resposta inteira. | 2202 |
+| [spatie/laravel-sitemap](https://github.com/spatie/laravel-sitemap) | Gere um sitemap sem precisar adicionar URLs manualmente, rastreando todo o seu site. | 2009 |
+| [Torann/laravel-geoip](https://github.com/Torann/laravel-geoip) | Determine a localização geográfica dos visitantes do site com base em seus endereços IP. | 2001 |
+| [munafio/chatify](https://github.com/munafio/chatify) | Um pacote Laravel que ajuda você a adicionar um sistema de mensagens em tempo real completo à sua aplicação nova/existente com apenas um comando. | 1963 |
+| [anhskohbo/no-captcha](https://github.com/anhskohbo/no-captcha) | No CAPTCHA reCAPTCHA para Laravel. | 1705 |
+| [nahid/talk](https://github.com/nahid/talk) | Talk é um sistema de conversação de usuários (chat) baseado em Laravel com mensagens em tempo real. | 1569 |
+| [spatie/laravel-tags](https://github.com/spatie/laravel-tags) | Adicione tags e comportamento de "taggable" a um aplicativo Laravel. | 1478 |
+| [spatie/period](https://github.com/spatie/period) | Compare várias datas entre si, calcule sobreposições e diferenças entre n-quantidades de períodos, além de comparações mais básicas entre dois períodos. | 1471 |
+| [rappasoft/laravel-livewire-tables](https://github.com/rappasoft/laravel-livewire-tables) | Um componente dinâmico do Laravel Livewire para tabelas de dados. | 1462 |
+| [protonemedia/laravel-ffmpeg](https://github.com/protonemedia/laravel-ffmpeg) | Este pacote fornece integração com o FFmpeg para o Laravel. O Filesystem do Laravel lida com o armazenamento dos arquivos. | 1440 |
+| [spatie/laravel-cookie-consent](https://github.com/spatie/laravel-cookie-consent) | Faça com que seu aplicativo Laravel cumpra a lei de cookies da UE. | 1267 |
+| [Power-Components/livewire-powergrid](https://github.com/Power-Components/livewire-powergrid) | PowerGrid gera Datatables avançados usando Laravel Livewire. | 1203 |
+| [spatie/laravel-honeypot](https://github.com/spatie/laravel-honeypot) | Prevenção de spam enviado por formulários. | 1162 |
+| [spatie/laravel-google-calendar](https://github.com/spatie/laravel-google-calendar) | Gerencie eventos em um Calendário do Google. | 1119 |
+| [cybercog/laravel-love](https://github.com/cybercog/laravel-love) | Adicione Reações Sociais aos Modelos Eloquent do Laravel. Permite que as pessoas expressem como se sentem em relação ao conteúdo. Sistema de Reações Ponderadas totalmente personalizável e Sistema de Tipo de Reação com Curtir, Não Curtir e quaisquer outros tipos de emoção personalizados. Você reage? | 1077 |
+| [proengsoft/laravel-jsvalidation](https://github.com/proengsoft/laravel-jsvalidation) | Permite reutilizar suas Regras de Validação, Mensagens, FormRequest e Validadores Laravel para validar formulários automaticamente no lado do cliente. | 1067 |
+| [ash-jc-allen/short-url](https://github.com/ash-jc-allen/short-url) | Um pacote Laravel para criar URLs encurtadas para seus aplicativos da web. | 1046 |
+| [spatie/laravel-settings](https://github.com/spatie/laravel-settings) | Armazene configurações de aplicativos fortemente tipadas. | 957 |
+| [spatie/laravel-web-tinker](https://github.com/spatie/laravel-web-tinker) | Execute o Tinker em seu navegador. | 942 |
+| [bavix/laravel-wallet](https://github.com/bavix/laravel-wallet) | Trabalhe facilmente com uma carteira virtual. | 912 |
+| [spatie/laravel-mix-purgecss](https://github.com/spatie/laravel-mix-purgecss) | Purgecss sem configuração para o Laravel Mix. | 886 |
+| [spatie/laravel-menu](https://github.com/spatie/laravel-menu) | Gerador de menu HTML para Laravel. | 854 |
+| [kreait/laravel-firebase](https://github.com/kreait/laravel-firebase) | Um pacote Laravel para o Firebase PHP Admin SDK. | 853 |
+| [spatie/laravel-webhook-client](https://github.com/spatie/laravel-webhook-client) | Receba webhooks em aplicativos Laravel. | 816 |
+| [spatie/laravel-webhook-server](https://github.com/spatie/laravel-webhook-server) | Envie webhooks de aplicativos Laravel. | 792 |
+| [spatie/laravel-feed](https://github.com/spatie/laravel-feed) | Gere feeds RSS facilmente. | 790 |
+| [spatie/laravel-tail](https://github.com/spatie/laravel-tail) | Um comando Artisan para acompanhar os logs de sua aplicação. | 705 |
+| [spatie/laravel-validation-rules](https://github.com/spatie/laravel-validation-rules) | Um conjunto de regras de validação úteis para o Laravel. | 678 |
+| [geocoder-php/GeocoderLaravel](https://github.com/geocoder-php/GeocoderLaravel) | Geocoder é uma biblioteca PHP que ajuda você a criar aplicativos geoconscientes, fornecendo uma poderosa camada de abstração para manipulações de geocodificação. | 643 |
+| [spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering) | Renderização no lado do servidor de JavaScript em sua aplicação Laravel. | 637 |
+| [nnjeim/world](https://github.com/nnjeim/world) | Pacote Laravel que fornece uma lista de países, estados, cidades, fusos horários, moedas e idiomas. | 595 |
+| [spatie/laravel-blade-javascript](https://github.com/spatie/laravel-blade-javascript) | Uma diretiva Blade para exportar variáveis para JavaScript. | 579 |
+| [ylsideas/feature-flags](https://github.com/ylsideas/feature-flags) | Recursos de recursos para Laravel. Um recurso de recurso é às vezes referido como um interruptor de recurso ou chave de recurso. | 575 |
+| [laravel-workflow/laravel-workflow](https://github.com/laravel-workflow/laravel-workflow) | Um pacote para o framework web Laravel que fornece ferramentas para definir e gerenciar fluxos de trabalho e atividades. | 574 |
+| [spatie/laravel-short-schedule](https://github.com/spatie/laravel-short-schedule) | Agende comandos artisan para serem executados em uma frequência inferior a um minuto. | 565 |
+| [f9webltd/laravel-api-response-helpers](https://github.com/f9webltd/laravel-api-response-helpers) | Um pacote simples que permite respostas API consistentes em toda a sua aplicação Laravel. | 563 |
+| [Team-Tea-Time/laravel-forum](https://github.com/Team-Tea-Time/laravel-forum) | Um pacote de fórum projetado para integração rápida e fácil em projetos Laravel. | 535 |
+| [WendellAdriel/laravel-validated-dto](https://github.com/WendellAdriel/laravel-validated-dto) | Objetos de Transferência de Dados com validação para aplicativos Laravel. | 524 |
+| [LaravelDaily/laravel-charts](https://github.com/LaravelDaily/laravel-charts) | Pacote para gerar gráficos Chart.js diretamente do Laravel/Blade, sem interação com JavaScript. | 467 |
+| [ralphjsmit/laravel-seo](https://github.com/ralphjsmit/laravel-seo) | Nunca mais se preocupe com SEO no Laravel! | 414 |
+| [mateusjunges/laravel-kafka](https://github.com/mateusjunges/laravel-kafka) | Um driver Kafka para o Laravel. | 405 |
+| [creagia/laravel-sign-pad](https://github.com/creagia/laravel-sign-pad) | Assinatura de almofada Laravel. Um pacote Laravel para assinar documentos e, opcionalmente, gerar PDFs certificados associados a um modelo Eloquent. | 369 |
+| [milwad-dev/laravel-validate](https://github.com/milwad-dev/laravel-validate) | Você pode validar dados com mais facilidade, o Laravel validate possui muitas classes de regras para validação. | 349 |
+| [Jeroen-G/Explorer](https://github.com/Jeroen-G/Explorer) | Próxima geração de driver Elasticsearch para Laravel Scout com o poder das consultas do Elasticsearch. | 325 |
+| [Label84/laravel-hours-helper](https://github.com/Label84/laravel-hours-helper) | Com o laravel-hours-helper, você pode criar uma coleção Illuminate\Support\Collection de datas e/ou horários com um intervalo específico por um período específico. | 245 |
+|
+| [Voltar ao topo](#misc-59) | 
+
+
+# E-Commerce (5)
+
+| Pacote                                     | Descrição                                                           | Estrelas |
+|--------------------------------------------|---------------------------------------------------------------------|----------|
+| [bagisto/bagisto](https://github.com/bagisto/bagisto) | Uma plataforma de comércio eletrônico Laravel fácil de usar, gratuita e de código aberto para construir sua loja online rapidamente. | 7414     |
+| [aimeos/aimeos-laravel](https://aimeos.org/laravel-ecommerce-package) | Pacote Laravel de comércio eletrônico para lojas online ultra rápidas, mercados escaláveis, aplicativos B2B complexos e gigacommerce. | 6461     |
+| [lunarphp/lunar](https://docs.lunarphp.io/) | Um pacote de código aberto que traz a funcionalidade moderna de comércio eletrônico sem cabeça para o Laravel. | 1458     |
+| [LaravelDaily/laravel-invoices](https://github.com/LaravelDaily/laravel-invoices) | Este pacote Laravel fornece uma interface fácil de usar para gerar arquivos PDF de fatura com os dados fornecidos. | 1087     |
+| [vanilophp/framework](https://vanilo.io/) | O verdadeiro Framework de Comércio Eletrônico Laravel. | 735      |
+
+# Flash Alerts Notifications (6)
+
+| Pacote                                     | Descrição                                                           | Estrelas |
+|--------------------------------------------|---------------------------------------------------------------------|----------|
+| [laracasts/flash](https://github.com/laracasts/flash) | Mensagens Flash fáceis para o seu aplicativo Laravel. | 2631     |
+| [mckenziearts/laravel-notify](https://github.com/mckenziearts/laravel-notify) | Laravel Notify é um pacote que permite adicionar notificações personalizadas ao seu projeto. Uma ampla variedade de designs de notificação está disponível. | 1433     |
+| [realrashid/sweet-alert](https://github.com/realrashid/sweet-alert) | Uma bela substituição das caixas de diálogo pop-up JavaScript para o Laravel. | 1038     |
+| [spatie/laravel-flash](https://github.com/spatie/laravel-flash) | Este é um pacote leve para enviar mensagens flash em aplicativos Laravel. | 503      |
+| [usernotnull/tall-toasts](https://github.com/usernotnull/tall-toasts) | Toasts de Notificação Bonitos para Laravel. Funciona com a pilha TALL: Laravel, TailwindCSS, Livewire, AlpineJS. | 452      |
+| [yoeunes/toastr](https://github.com/yoeunes/toastr) | Notificações Toastr.js para Laravel. | 294      |
+
+----
+# Mail (3)
+
+| Pacote                                     | Descrição                                                           | Estrelas |
+|--------------------------------------------|---------------------------------------------------------------------|----------|
+| [Qoraiche/laravel-mail-editor](https://github.com/Qoraiche/laravel-mail-editor) | Pacote de edição de Mailable para suas aplicações Laravel para criar e gerenciar Mailables usando uma interface web. | 1988     |
+| [spatie/laravel-mail-preview](https://github.com/spatie/laravel-mail-preview) | Um driver de email para visualizar rapidamente emails. | 1074     |
+| [Xammie/mailbook](https://github.com/Xammie/mailbook) | Pacote que permite inspecionar facilmente seus emails sem precisar ativá-los em sua aplicação. | 362     |
+*
+----
+
+
+
+# Essentials
 
 * [Laravel](https://laravel.com) ([Documentation](https://laravel.com/docs))
 * [Laravel API Reference](https://laravel.com/api/master/)
@@ -54,8 +360,8 @@ Inspired by [ziadoz/awesome-php](https://github.com/ziadoz/awesome-php)
 
 Inserido LIST2
 
-[Packages2]: #packages2
-## Packages2
+
+# Packages2
 - [DuckDuckGo Packagist Search](https://duck.co/ia/view/packagist) - Search for Laravel packages from [DuckDuckGo](https://duckduckgo.com/) by including 'packagist' as first search term. \[06/29/2015\]
 - [Laravel Collective](http://laravelcollective.com/) - Maintainers of components removed from core Laravel framework, including annotations, remote (SSH), and forms/HTML.
 - [Packagist](http://packagist.com/) - Official directory of Laravel (and other Composer-installable) packages.
@@ -64,11 +370,11 @@ Inserido LIST2
 - [Spatie](https://spatie.be/en/opensource/laravel) - A large collection of Laravel specific quality packages made by Spatie.
 
 
-## Popular Packages
+# Popular Packages
 
 > Esta é uma lista de pacotes bem documentados e testados que são frequentemente usados em projetos de Laravel.Se você está procurando uma lista exaustiva de pacotes PHP, consulte os repositórios de pacotes mencionados acima.
 
-##### Developer Tools
+# Developer Tools
 
 * [Scaffold Interface](https://github.com/amranidev/scaffold-interface) -Um gerador inteligente de crud para o Laravel
 * [IDE Helper](https://github.com/barryvdh/laravel-ide-helper) - Gera um arquivo auxiliar para o preenchimento automático do IDEutomático do IDE
@@ -83,7 +389,7 @@ Inserido LIST2
 * [Prequel](https://github.com/Protoqol/Prequel/) -Uma GUI de gerenciamento de banco de dados clara e concisa ajustou o Laravel.
 
 
-### Development Tools2
+# Development Tools2
 - [Acacha llum](https://github.com/acacha/llum) - Llum illuminates your Laravel projects speeding up your Github/Laravel development workflow. \[23/02/2017\]
 - [Artisan Menu](https://github.com/DivineOmega/artisan-menu) - Provides menu-driven front-end for Artisan, including custom Artisan commands and prompting for arguments. \[07/16/2018\]
 - [Artisan View](https://github.com/svenluijten/artisan-view) - Adds a `make:view` [Artisan](https://laravel.com/docs/artisan) command for generating a Blade view file. \[07/27/2016\]
@@ -139,7 +445,7 @@ Inserido LIST2
 - [Laravel UI http logger](http://apideveloper.io) - Laravel package to log every request/response app handled and UI to analyze it
 - [Bugphix](https://github.com/bugphix/bugphix-laravel) - Capture and monitor detailed error logs with nice dashboard and UI
 
-### Development Tools
+# Development Tools3
 - [docker-laravel](https://github.com/mtmacdonald/docker-laravel) - A Ubuntu [LEMP](https://lemp.io/) [Docker](https://www.docker.com/) base image for Laravel development loosely based on [Phusion Base Image](https://github.com/phusion/baseimage-docker). \[06/01/2015\]
 - [docker-laravel](https://github.com/harshjv/docker-laravel) - Laravel 5 environment built on Docker with PHP-FPM, MySQL, nginx, and Gulp managed using [Docker Compose](https://github.com/docker/compose). \[05/17/2016\]
 - [docker-laravel](https://github.com/richbayliss/docker-laravel) - A set of docker-compose files for running a Laravel PHP application in Docker. \[02/06/2017\]
@@ -174,13 +480,13 @@ Inserido LIST2
 
 
 
-### Algorithms/Data Structures
+# Algorithms/Data Structures
 
 - [Laravel NestedSet](https://github.com/lazychaser/laravel-nestedset) - An implementation of a tree data structure in a relational database. \[03/16/2017\]
 - [HashIDs](https://github.com/mitchellvanw/hashids) - Laravel wrapper for the [HashIDs](http://hashids.org/) tool to generate short, unique hashes for any integer (e.g., surrogate key ID).
 - [Laravel Hashid](https://github.com/ElfSundae/laravel-hashid) - Obfuscate your data by generating reversible, non-sequential, URL-safe identifiers.
 
-### Authentication/Security
+# Authentication/Security
 - [Acacha Laravel Social](https://github.com/acacha/laravel-social) - OAuth Social Login/Register implementation with Github, Facebook, Google, Twitter... using Laravel Socialite and (optionally) [AdminLTE Laravel package](https://github.com/acacha/adminlte-laravel) . \[23/02/2017\]
 - [Active Directory LDAP Authentication](https://github.com/strebl/ldap-auth) - LDAP authentication package for Active Directory. \[07/27/2015\]
 - [Botscout protection](https://github.com/nicolasbeauvais/laravel-botscout) - Block malicious scripts using botscout.com protection for your laravel app. \[03/03/2017\]
@@ -211,7 +517,7 @@ Inserido LIST2
 - [URL Signer](https://github.com/spatie/laravel-url-signer) - Improve Laravel security by creating URLs with limited lifetime (similar to AWS signed URLs). \[08/16/2015\]
 - [Laravel Security Checker](https://github.com/Jorijn/laravel-security-checker) - Added Laravel functionality to SensioLabs Security Checker. Adds a command to check for, and optionally emails you, vulnerabilities when they affect you. \[07/24/2017\]
 
-### Boilerplate/Customized Configurations
+# Boilerplate/Customized Configurations
 - [Laravel Code Generator](https://github.com/CrestApps/laravel-code-generator) - A clean code generator for Laravel framework that will save you time! This awesome tool will help you generate resources like views, controllers, routes, migrations, languages or request-forms! It is extremely flexible and customizable to cover many on the use cases. It is shipped with cross-browsers compatible template, along with a client-side…
 - [Acacha adminlte-laravel](https://github.com/acacha/adminlte-laravel) - A Laravel 5 package that switches default Laravel scaffolding/boilerplate to AdminLTE template with Bootstrap 3.0 and [Pratt Landing Page](http://blacktie.co/demo/pratt/). \[02/02/2016\]
 - [Antares Project](https://github.com/antaresproject) - Custom re-packaging of Laravel, Vue.JS, and more as a starting point for building new applications quickly. \[06/27/2017\]
@@ -758,122 +1064,13 @@ Inserido LIST2
 
 
 
-## Auth and Users
 
-- [spatie/laravel-permission](https://github.com/spatie/laravel-permission) - Associate users with permissions and roles
-- [santigarcor/laratrust](https://laratrust.santigarcor.me/) - Laravel role-based access control package
-- [JosephSilber/bouncer](https://github.com/JosephSilber/bouncer) - elegant, framework-agnostic approach to managing roles and abilities for any app using Eloquent models
-- [404labfr/laravel-impersonate](https://github.com/404labfr/laravel-impersonate) - makes it easy to authenticate as your users. Add a simple trait to your user model and impersonate as one of your users in one click.
-- [spatie/laravel-activitylog](https://github.com/spatie/laravel-activitylog) - Provides easy to use functions to log the activities of the users of your app.
 
-- - - - -
 
-## Code Structure & Architecture
-
-- [Laravel Actions](https://laravelactions.com/) - Classes that take care of one specific task. This package introduces a new way of organising the logic of your Laravel applications by focusing on the actions your application provide.
-- [nWidart/laravel-modules](https://github.com/nWidart/laravel-modules) - package to manage your large Laravel app using modules. Module is like a Laravel package, it has some views, controllers or models.
-- [archtechx/tenancy](https://tenancyforlaravel.com/) - A flexible multi-tenancy package for Laravel. Single & multi-database tenancy, automatic & manual mode, event-based architecture.
-- [spatie/laravel-multitenancy](https://github.com/spatie/laravel-multitenancy) - Make your Laravel app usable by multiple tenants
-
-- - - - -
-
-## Admin Panels and Code Generators
-
-- [Filament Admin](https://filamentphp.com/) - Filament is a collection of tools for rapidly building beautiful TALL stack apps, designed for humans.
-- [InfyOmLabs/laravel-generator](https://github.com/InfyOmLabs/laravel-generator) - Generate APIs, UI Scaffolds, Tests, CRUDs in Laravel.
-- [laravel-shift/blueprint](https://github.com/laravel-shift/blueprint) - Tool for rapidly generating multiple Laravel components from a single, human readable definition.
-- [yajra/laravel-datatables](https://github.com/yajra/laravel-datatables) - jQuery DataTables API for Laravel
 
 
 - - - - -
 
-## File Management & Manipulation
-
-- [spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary) - This package can associate all sorts of files with Eloquent models
-- [Intervention Image](https://image.intervention.io/v2) - Not only Laravel, but a general PHP package: image handling and manipulation library
-- [spatie/image-optimizer](https://github.com/spatie/image-optimizer) - Optimize PNGs, JPGs, SVGs and GIFs by running them through a chain of various image optimization tools
-- [spatie/browsershot](https://github.com/spatie/browsershot) - Convert a webpage to an image or pdf using headless Chrome
-- [spatie/pdf-to-image](https://github.com/spatie/pdf-to-image) - Convert a pdf to an image
-
-- - - - -
-
-## Visuals & UI: Blade, Themes, Icons
-
-- [blade-ui-kit/blade-icons](https://github.com/blade-ui-kit/blade-icons): A package to easily make use of SVG icons in your Laravel Blade views
-- [wireui/wireui](https://github.com/wireui/wireui) - library of components and resources to empower your Laravel and Livewire application development.
-- [Wire Elements](https://wire-elements.dev/) - beautiful components crafted with Livewire
-- [spatie/laravel-html](https://github.com/spatie/laravel-html) - Painless html generation
-- [protonemedia/laravel-form-components](https://github.com/protonemedia/laravel-form-components) - Blade components to build forms with Tailwind CSS/Bootstrap
-
-- - - - -
-
-## Debugging, Maintenance & Optimization
-
-- [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) - This is a package to integrate PHP Debug Bar with Laravel.
-- [Laravel Telescope](https://laravel.com/docs/9.x/telescope) - Telescope provides insight into the requests coming into your application, exceptions, log entries, database queries, queued jobs, mail, notifications, cache operations, scheduled tasks, variable dumps, and more.
-- [spatie/laravel-backup](https://github.com/spatie/laravel-backup) - This Laravel package creates a backup of your application. The backup is a zip file that contains all files in the directories you specify along with a dump of your database.
-- [spatie/laravel-responsecache](https://github.com/spatie/laravel-responsecache) - Speed up an app by caching the entire response
-- [spatie/laravel-mail-preview](https://github.com/spatie/laravel-mail-preview) - A mail driver to quickly preview mail
-- [spatie/laravel-db-snapshots](https://github.com/spatie/laravel-db-snapshots) - Quickly dump and load databases
-- [spatie/laravel-uptime-monitor](https://github.com/spatie/laravel-uptime-monitor) - A powerful and easy to configure uptime and ssl monitor
-- [spatie/laravel-failed-job-monitor](https://github.com/spatie/laravel-failed-job-monitor) - Get notified when a queued job fails
-- [spatie/laravel-server-monitor](https://github.com/spatie/laravel-server-monitor) - This package keeps an eye on the health of all your servers.
-- [spatie/laravel-schedule-monitor](https://github.com/spatie/laravel-schedule-monitor) - Monitor scheduled tasks in a Laravel app
-
-- - - - -
-
-## Database & Eloquent
-
-- [spatie/laravel-query-builder](https://github.com/spatie/laravel-query-builder) - Filter, sort and include eloquent relations based on a request.
-- [calebporzio/sushi](https://github.com/calebporzio/sushi) - Eloquent's missing "array" driver. Sometimes you want to use Eloquent, but without dealing with a database.
-- [calebporzio/parental](https://github.com/calebporzio/parental) - Brings STI (Single Table Inheritance) capabilities to Eloquent.
-- [cviebrock/eloquent-sluggable](https://github.com/cviebrock/eloquent-sluggable) - Easy creation of slugs for your Eloquent models in Laravel.
-- [spatie/laravel-sluggable](https://github.com/spatie/laravel-sluggable) - Generate slugs when saving Eloquent models
-- [staudenmeir/eloquent-has-many-deep](https://github.com/staudenmeir/eloquent-has-many-deep) - This extended version of HasManyThrough allows relationships with unlimited intermediate models. Also check out more similar packages by [staudenmeir](https://github.com/staudenmeir).
-- [spatie/laravel-collection-macros](https://github.com/spatie/laravel-collection-macros) - A set of useful Laravel collection macros
-- [spatie/eloquent-sortable](https://github.com/spatie/eloquent-sortable) - Sortable behaviour for Eloquent models
-- [spatie/laravel-searchable](https://github.com/spatie/laravel-searchable) - Pragmatically search through models and other sources
-- [spatie/laravel-model-states](https://github.com/spatie/laravel-model-states) - State support for models
-- [spatie/laravel-schemaless-attributes](https://github.com/spatie/laravel-schemaless-attributes) - Add schemaless attributes to Eloquent models
-- [spatie/laravel-model-status](https://github.com/spatie/laravel-model-status) - Easily add statuses to your models
-
-- - - - -
-
-## Multi-Language
-
-- [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization) - Adds the missing localization features to Laravel: language selection in the URL and from headers, translatable routes and many other small features that are commonly needed in multilanguage sites.
-- [spatie/laravel-translatable](https://github.com/spatie/laravel-translatable) - This package contains a trait to make Eloquent models translatable. Translations are stored as json. There is no extra table needed to hold them.
-- [Astrotomic/laravel-translatable](https://github.com/Astrotomic/laravel-translatable) - If you want to store translations of your models into the database, this package is for you.
-- [spatie/laravel-translation-loader](https://github.com/spatie/laravel-translation-loader) - Store your translations in the database or other sources
-
-- - - - -
-
-## Misc
-
-- [Laravel Excel](https://laravel-excel.com/) - Supercharged Excel exports and imports in Laravel
-- [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) - This package generates helper files that enable your IDE to provide accurate autocompletion 
-- [DarkaOnLine/L5-Swagger](https://github.com/DarkaOnLine/L5-Swagger) - OpenApi or Swagger Specification for your Laravel project made easy
-- [tighten/ziggy](https://github.com/tighten/ziggy) - Use your Laravel routes in JavaScript
-- [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object) - Data transfer objects (DTOs) with batteries included
-- [spatie/laravel-sitemap](https://github.com/spatie/laravel-sitemap) - Generate a sitemap without you having to add urls to it manually, by crawling your entire site.
-- [spatie/period](https://github.com/spatie/period) - Compare multiple dates with each other, calculate the overlaps and differences between n-amount of periods, as well as some more basic comparisons between two periods.
-- [spatie/laravel-tags](https://github.com/spatie/laravel-tags) - Add tags and taggable behaviour to a Laravel app
-- [spatie/laravel-analytics](https://github.com/spatie/laravel-analytics) - A Laravel package to retrieve pageviews and other data from Google Analytics
-- [spatie/laravel-responsecache](https://github.com/spatie/laravel-responsecache) - Speed up a Laravel app by caching the entire response
-- [spatie/laravel-cookie-consent](https://github.com/spatie/laravel-cookie-consent) - Make your Laravel app comply with the crazy EU cookie law
-- [spatie/laravel-honeypot](https://github.com/spatie/laravel-honeypot) - Preventing spam submitted through forms
-- [spatie/laravel-google-calendar](https://github.com/spatie/laravel-google-calendar) - Manage events on a Google Calendar
-- [spatie/laravel-mix-purgecss](https://github.com/spatie/laravel-mix-purgecss) - Zero-config Purgecss for Laravel Mix
-- [spatie/laravel-web-tinker](https://github.com/spatie/laravel-web-tinker) - Tinker in your browser
-- [spatie/laravel-menu](https://github.com/spatie/laravel-menu) - Html menu generator for Laravel
-- [spatie/laravel-feed](https://github.com/spatie/laravel-feed) - Easily generate RSS feeds
-- [spatie/laravel-settings](https://github.com/spatie/laravel-settings) - Store strongly typed application settings
-- [spatie/laravel-tail](https://github.com/spatie/laravel-tail) - An artisan command to tail your application logs
-- [spatie/laravel-webhook-server](https://github.com/spatie/laravel-webhook-server) - Send webhooks from Laravel apps
-- [spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering) - Server side rendering JavaScript in your Laravel application
-- [spatie/laravel-webhook-client](https://github.com/spatie/laravel-webhook-client) - Receive webhooks in Laravel apps
-- [spatie/laravel-validation-rules](https://github.com/spatie/laravel-validation-rules) - A set of useful Laravel validation rules
-- [spatie/laravel-blade-javascript](https://github.com/spatie/laravel-blade-javascript) - A Blade directive to export variables to JavaScript
 
 
 ### Applications Built with Laravel
@@ -1015,3 +1212,4 @@ Found an awesome package, blog, course or video? Send me a pull request!
 
 Awesome Laravel is licensed under a  [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
+[Packages2]: #packages2
